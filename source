@@ -1,0 +1,649 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local GumballHUB = Instance.new("ScreenGui")
+local MainFrame = Instance.new("ImageLabel")
+local SideBar = Instance.new("ImageLabel")
+local OpenHomePage = Instance.new("TextButton")
+local FunctionIcon = Instance.new("ImageButton")
+local OpenFuctionPage = Instance.new("TextButton")
+local FunctionIcon_2 = Instance.new("ImageButton")
+local OpenTeleportPage = Instance.new("TextButton")
+local TeleportIcon = Instance.new("ImageButton")
+local OpenCreditPage = Instance.new("TextButton")
+local CreditIcon = Instance.new("ImageButton")
+local TopBar = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local FunctionPage = Instance.new("ImageLabel")
+local antiragdoll = Instance.new("TextButton")
+local flingpush = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local GuisPage = Instance.new("ImageLabel")
+local fedrift = Instance.new("TextButton")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local vynixius = Instance.new("TextButton")
+local yield = Instance.new("TextButton")
+local TextLabel_6 = Instance.new("TextLabel")
+local TeleportPage = Instance.new("ImageLabel")
+local house = Instance.new("TextButton")
+local spiral = Instance.new("TextButton")
+local TextLabel_7 = Instance.new("TextLabel")
+local double = Instance.new("TextButton")
+local movingcase = Instance.new("TextButton")
+local pool = Instance.new("TextButton")
+local mine = Instance.new("TextButton")
+local balloon = Instance.new("TextButton")
+local TextLabel_8 = Instance.new("TextLabel")
+local CreditPage = Instance.new("ImageLabel")
+local UICredits = Instance.new("TextLabel")
+local UICredits_2 = Instance.new("TextLabel")
+
+--Properties:
+
+GumballHUB.Name = "Gumball HUB"
+GumballHUB.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = GumballHUB
+MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame.BackgroundTransparency = 1.000
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.32466507, 0, 0.222379595, 0)
+MainFrame.Size = UDim2.new(0, 619, 0, 392)
+MainFrame.Image = "rbxassetid://3570695787"
+MainFrame.ImageColor3 = Color3.fromRGB(35, 35, 35)
+MainFrame.ScaleType = Enum.ScaleType.Slice
+MainFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+MainFrame.SliceScale = 0.050
+MainFrame.Draggable = true
+
+SideBar.Name = "SideBar"
+SideBar.Parent = MainFrame
+SideBar.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+SideBar.BackgroundTransparency = 1.000
+SideBar.BorderSizePixel = 0
+SideBar.ClipsDescendants = true
+SideBar.Size = UDim2.new(0, 129, 0, 392)
+SideBar.Image = "rbxassetid://3570695787"
+SideBar.ImageColor3 = Color3.fromRGB(25, 25, 25)
+SideBar.ScaleType = Enum.ScaleType.Slice
+SideBar.SliceCenter = Rect.new(100, 100, 100, 100)
+SideBar.SliceScale = 0.050
+
+OpenHomePage.Name = "OpenGuisPage"
+OpenHomePage.Parent = SideBar
+OpenHomePage.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+OpenHomePage.BorderSizePixel = 0
+OpenHomePage.Position = UDim2.new(0, 0, 0.0918367356, 0)
+OpenHomePage.Size = UDim2.new(0, 135, 0, 31)
+OpenHomePage.Font = Enum.Font.Ubuntu
+OpenHomePage.Text = "Gui's"
+OpenHomePage.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenHomePage.TextSize = 14.000
+
+FunctionIcon.Name = "FunctionIcon"
+FunctionIcon.Parent = OpenHomePage
+FunctionIcon.BackgroundTransparency = 1.000
+FunctionIcon.LayoutOrder = 2
+FunctionIcon.Position = UDim2.new(0.0962962955, 0, 0.161290318, 0)
+FunctionIcon.Size = UDim2.new(0, 20, 0, 20)
+FunctionIcon.Image = "rbxassetid://3926305904"
+FunctionIcon.ImageRectOffset = Vector2.new(404, 844)
+FunctionIcon.ImageRectSize = Vector2.new(36, 36)
+
+OpenFuctionPage.Name = "OpenFuctionPage"
+OpenFuctionPage.Parent = SideBar
+OpenFuctionPage.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+OpenFuctionPage.BorderSizePixel = 0
+OpenFuctionPage.Position = UDim2.new(0, 0, 0.170918375, 0)
+OpenFuctionPage.Size = UDim2.new(0, 135, 0, 31)
+OpenFuctionPage.Font = Enum.Font.Ubuntu
+OpenFuctionPage.Text = "Functions"
+OpenFuctionPage.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenFuctionPage.TextSize = 14.000
+
+FunctionIcon_2.Name = "FunctionIcon"
+FunctionIcon_2.Parent = OpenFuctionPage
+FunctionIcon_2.BackgroundTransparency = 1.000
+FunctionIcon_2.LayoutOrder = 2
+FunctionIcon_2.Position = UDim2.new(0.0962962955, 0, 0.161290318, 0)
+FunctionIcon_2.Size = UDim2.new(0, 20, 0, 20)
+FunctionIcon_2.Image = "rbxassetid://3926305904"
+FunctionIcon_2.ImageRectOffset = Vector2.new(404, 844)
+FunctionIcon_2.ImageRectSize = Vector2.new(36, 36)
+
+OpenTeleportPage.Name = "OpenTeleportPage"
+OpenTeleportPage.Parent = SideBar
+OpenTeleportPage.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+OpenTeleportPage.BorderSizePixel = 0
+OpenTeleportPage.Position = UDim2.new(0, 0, 0.25, 0)
+OpenTeleportPage.Size = UDim2.new(0, 135, 0, 31)
+OpenTeleportPage.Font = Enum.Font.Ubuntu
+OpenTeleportPage.Text = "Teleports"
+OpenTeleportPage.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenTeleportPage.TextSize = 14.000
+
+TeleportIcon.Name = "TeleportIcon"
+TeleportIcon.Parent = OpenTeleportPage
+TeleportIcon.BackgroundTransparency = 1.000
+TeleportIcon.LayoutOrder = 6
+TeleportIcon.Position = UDim2.new(0.0962962955, 0, 0.161290318, 0)
+TeleportIcon.Size = UDim2.new(0, 20, 0, 20)
+TeleportIcon.Image = "rbxassetid://3926305904"
+TeleportIcon.ImageRectOffset = Vector2.new(368, 4)
+TeleportIcon.ImageRectSize = Vector2.new(24, 24)
+
+OpenCreditPage.Name = "OpenCreditPage"
+OpenCreditPage.Parent = SideBar
+OpenCreditPage.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+OpenCreditPage.BorderSizePixel = 0
+OpenCreditPage.Position = UDim2.new(0, 0, 0.890306115, 0)
+OpenCreditPage.Size = UDim2.new(0, 135, 0, 31)
+OpenCreditPage.Font = Enum.Font.Ubuntu
+OpenCreditPage.Text = "Credits"
+OpenCreditPage.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenCreditPage.TextSize = 14.000
+
+CreditIcon.Name = "CreditIcon"
+CreditIcon.Parent = OpenCreditPage
+CreditIcon.BackgroundTransparency = 1.000
+CreditIcon.LayoutOrder = 4
+CreditIcon.Position = UDim2.new(0.096296303, 0, 0.161290318, 0)
+CreditIcon.Size = UDim2.new(0, 20, 0, 20)
+CreditIcon.Image = "rbxassetid://3926307971"
+CreditIcon.ImageRectOffset = Vector2.new(884, 4)
+CreditIcon.ImageRectSize = Vector2.new(36, 36)
+
+TopBar.Name = "TopBar"
+TopBar.Parent = MainFrame
+TopBar.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TopBar.BackgroundTransparency = 1.000
+TopBar.BorderSizePixel = 0
+TopBar.Size = UDim2.new(0, 619, 0, 36)
+TopBar.Image = "rbxassetid://3570695787"
+TopBar.ImageColor3 = Color3.fromRGB(25, 25, 25)
+TopBar.ScaleType = Enum.ScaleType.Slice
+TopBar.SliceCenter = Rect.new(100, 100, 100, 100)
+TopBar.SliceScale = 0.050
+
+TextLabel.Parent = TopBar
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 255, 0, 36)
+TextLabel.Font = Enum.Font.Ubuntu
+TextLabel.Text = "Gumball HUB   [Ragdoll Engine] "
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 17.000
+
+FunctionPage.Name = "FunctionPage"
+FunctionPage.Parent = MainFrame
+FunctionPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FunctionPage.BackgroundTransparency = 1.000
+FunctionPage.Position = UDim2.new(0.208400652, 0, 0.0918367356, 0)
+FunctionPage.Size = UDim2.new(0, 490, 0, 356)
+FunctionPage.Visible = false
+FunctionPage.Image = "rbxassetid://3570695787"
+FunctionPage.ImageColor3 = Color3.fromRGB(35, 35, 35)
+FunctionPage.ScaleType = Enum.ScaleType.Slice
+FunctionPage.SliceCenter = Rect.new(100, 100, 100, 100)
+FunctionPage.SliceScale = 0.050
+
+antiragdoll.Name = "antiragdoll"
+antiragdoll.Parent = FunctionPage
+antiragdoll.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+antiragdoll.BorderColor3 = Color3.fromRGB(29, 29, 29)
+antiragdoll.Position = UDim2.new(0.0110593215, 0, 0.176966295, 0)
+antiragdoll.Size = UDim2.new(0, 214, 0, 30)
+antiragdoll.Font = Enum.Font.Ubuntu
+antiragdoll.Text = "Anti Ragdoll"
+antiragdoll.TextColor3 = Color3.fromRGB(255, 255, 255)
+antiragdoll.TextSize = 14.000
+antiragdoll.MouseButton1Down:connect(function()
+    while game:GetService("RunService").Heartbeat:Wait() do
+        local chr = game.Players.LocalPlayer.Character
+ 
+        for _,v in pairs(chr:GetChildren()) do
+            if v:IsA("BallSocketConstraint") or v:IsA("HingeConstraint") or v.Name == "Controls" or v.Name == "Local Ragdoll" or v.Name == "State Handler" or v.Name == "FirstPerson" or v.Name == "FakeAdmin" then
+                v:Destroy()
+            end
+        end
+    end
+end)
+end)
+
+flingpush.Name = "flingpush"
+flingpush.Parent = FunctionPage
+flingpush.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+flingpush.BorderColor3 = Color3.fromRGB(29, 29, 29)
+flingpush.Position = UDim2.new(0.464120567, 0, 0.17696628, 0)
+flingpush.Size = UDim2.new(0, 254, 0, 30)
+flingpush.Font = Enum.Font.Ubuntu
+flingpush.Text = "Fling Push"
+flingpush.TextColor3 = Color3.fromRGB(255, 255, 255)
+flingpush.TextSize = 14.000
+flingpush.MouseButton1Down:connect(function()
+local down = false
+local loop = game:GetService('RunService')
+local ws = game:GetService('Workspace')
+local players = game:GetService('Players')
+local player = players.LocalPlayer
+local mouse = player:GetMouse()
+
+loop.Heartbeat:Connect(function()
+    game:GetService("ReplicatedStorage").LocalRagdollEvent:Fire(false)
+	if player.Character:FindFirstChild("Push") then
+	    ws[player.Name].Push.Enabled = true
+		ws[player.Name].Push.PushEvent:FireServer()
+	end
+	if player.Character:FindFirstChild("ImpulseGrenade") then
+		ws[player.Name].ImpulseGrenade.Enabled = true
+	end
+end)
+
+mouse.Button1Down:connect(function()
+    down = true
+    mouse.Button1Up:connect(function()
+        down = false
+    end)
+    while wait() do
+        if down and 
+        player.Character:FindFirstChild("ImpulseGrenade") and 
+        player.Character:FindFirstChild("ImpulseGrenade").Enabled == true then
+                player.Character.ImpulseGrenade:Activate()
+        else
+            break
+        end
+    end
+end)
+
+print('Executed Ragdoll Engine Script! by 24dxmon#4869')
+end)
+
+TextLabel_2.Parent = FunctionPage
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.0122448979, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 458, 0, 42)
+TextLabel_2.Font = Enum.Font.Ubuntu
+TextLabel_2.Text = "Functions"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 45.000
+
+TextLabel_3.Parent = FunctionPage
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.0122448979, 0, -0.053370785, 0)
+TextLabel_3.Size = UDim2.new(0, 466, 0, 86)
+TextLabel_3.Font = Enum.Font.Ubuntu
+TextLabel_3.Text = "_____________"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 50.000
+
+GuisPage.Name = "GuisPage"
+GuisPage.Parent = MainFrame
+GuisPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GuisPage.BackgroundTransparency = 1.000
+GuisPage.Position = UDim2.new(0.208400652, 0, 0.0918367356, 0)
+GuisPage.Size = UDim2.new(0, 488, 0, 356)
+GuisPage.Visible = false
+GuisPage.Image = "rbxassetid://3570695787"
+GuisPage.ImageColor3 = Color3.fromRGB(35, 35, 35)
+GuisPage.ScaleType = Enum.ScaleType.Slice
+GuisPage.SliceCenter = Rect.new(100, 100, 100, 100)
+GuisPage.SliceScale = 0.050
+
+fedrift.Name = "fedrift"
+fedrift.Parent = GuisPage
+fedrift.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+fedrift.BorderColor3 = Color3.fromRGB(29, 29, 29)
+fedrift.Position = UDim2.new(0.0114555983, 0, 0.174157292, 0)
+fedrift.Size = UDim2.new(0, 234, 0, 30)
+fedrift.Font = Enum.Font.Ubuntu
+fedrift.Text = "FE Drift Car"
+fedrift.TextColor3 = Color3.fromRGB(255, 255, 255)
+fedrift.TextSize = 14.000
+fedrift.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/MonkoTubeYT/carscript/master/!carscript.lua',true))()
+end)
+
+TextLabel_4.Parent = GuisPage
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.033996582, 0, 0, 0)
+TextLabel_4.Size = UDim2.new(0, 448, 0, 42)
+TextLabel_4.Font = Enum.Font.Ubuntu
+TextLabel_4.Text = "Gui's"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 45.000
+
+TextLabel_5.Parent = GuisPage
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.0122448979, 0, -0.053370785, 0)
+TextLabel_5.Size = UDim2.new(0, 466, 0, 86)
+TextLabel_5.Font = Enum.Font.Ubuntu
+TextLabel_5.Text = "_____________"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 50.000
+
+vynixius.Name = "vynixius"
+vynixius.Parent = GuisPage
+vynixius.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+vynixius.BorderColor3 = Color3.fromRGB(29, 29, 29)
+vynixius.Position = UDim2.new(0.505308032, 0, 0.174157292, 0)
+vynixius.Size = UDim2.new(0, 234, 0, 30)
+vynixius.Font = Enum.Font.Ubuntu
+vynixius.Text = "Vynixius Ragdoll Engine GUI"
+vynixius.TextColor3 = Color3.fromRGB(255, 255, 255)
+vynixius.TextSize = 14.000
+vynixius.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Scripts/master/Vynixius%20Ragdoll%20Engine%20Loader"))()
+end)
+
+yield.Name = "yield"
+yield.Parent = GuisPage
+yield.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+yield.BorderColor3 = Color3.fromRGB(29, 29, 29)
+yield.Position = UDim2.new(0.0114555983, 0, 0.286516845, 0)
+yield.Size = UDim2.new(0, 475, 0, 30)
+yield.Font = Enum.Font.Ubuntu
+yield.Text = "Infinite Yield"
+yield.TextColor3 = Color3.fromRGB(255, 255, 255)
+yield.TextSize = 14.000
+yield.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+TextLabel_6.Parent = GuisPage
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.0298982225, 0, 0.491573036, 0)
+TextLabel_6.Size = UDim2.new(0, 448, 0, 42)
+TextLabel_6.Font = Enum.Font.Ubuntu
+TextLabel_6.Text = "More Comming soon..."
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 45.000
+
+TeleportPage.Name = "TeleportPage"
+TeleportPage.Parent = MainFrame
+TeleportPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TeleportPage.BackgroundTransparency = 1.000
+TeleportPage.Position = UDim2.new(0.207337111, 0, 0.0918367356, 0)
+TeleportPage.Size = UDim2.new(0, 490, 0, 356)
+TeleportPage.Visible = false
+TeleportPage.Image = "rbxassetid://3570695787"
+TeleportPage.ImageColor3 = Color3.fromRGB(35, 35, 35)
+TeleportPage.ScaleType = Enum.ScaleType.Slice
+TeleportPage.SliceCenter = Rect.new(100, 100, 100, 100)
+TeleportPage.SliceScale = 0.050
+
+house.Name = "house"
+house.Parent = TeleportPage
+house.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+house.BorderColor3 = Color3.fromRGB(29, 29, 29)
+house.Position = UDim2.new(0.033996582, 0, 0.176966295, 0)
+house.Size = UDim2.new(0, 456, 0, 30)
+house.Font = Enum.Font.Ubuntu
+house.Text = "Top House"
+house.TextColor3 = Color3.fromRGB(255, 255, 255)
+house.TextSize = 14.000
+house.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(156.917328, 1013.35004, -20.6564789, 0.00249188021, -6.45595e-09, 0.999996901, 1.0080198e-08, 1, 6.43085141e-09, -0.999996901, 1.00641415e-08, 0.00249188021)
+end)
+
+spiral.Name = "spiral"
+spiral.Parent = TeleportPage
+spiral.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+spiral.BorderColor3 = Color3.fromRGB(29, 29, 29)
+spiral.Position = UDim2.new(0.033996582, 0, 0.292134821, 0)
+spiral.Size = UDim2.new(0, 456, 0, 30)
+spiral.Font = Enum.Font.Ubuntu
+spiral.Text = "Spiral Staircase"
+spiral.TextColor3 = Color3.fromRGB(255, 255, 255)
+spiral.TextSize = 14.000
+spiral.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(111.381981, 809.150024, -165.126938, -0.999641955, 0, 0.0267814621, 0, 1, 0, -0.0267814621, 0, -0.999641955)
+end)
+
+TextLabel_7.Parent = TeleportPage
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.033996582, 0, 0, 0)
+TextLabel_7.Size = UDim2.new(0, 448, 0, 42)
+TextLabel_7.Font = Enum.Font.Ubuntu
+TextLabel_7.Text = "Locations"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextSize = 45.000
+
+double.Name = "double"
+double.Parent = TeleportPage
+double.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+double.BorderColor3 = Color3.fromRGB(29, 29, 29)
+double.Position = UDim2.new(0.0319557674, 0, 0.429775268, 0)
+double.Size = UDim2.new(0, 456, 0, 30)
+double.Font = Enum.Font.Ubuntu
+double.Text = "Double Staircases"
+double.TextColor3 = Color3.fromRGB(255, 255, 255)
+double.TextSize = 14.000
+double.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-0.514351308, 183.149994, -341.756073, -0.999953568, 0, -0.0096540451, 0, 1, 0, 0.0096540451, 0, -0.999953568)
+end)
+
+movingcase.Name = "movingcase"
+movingcase.Parent = TeleportPage
+movingcase.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+movingcase.BorderColor3 = Color3.fromRGB(29, 29, 29)
+movingcase.Position = UDim2.new(0.033996582, 0, 0.561797738, 0)
+movingcase.Size = UDim2.new(0, 456, 0, 30)
+movingcase.Font = Enum.Font.Ubuntu
+movingcase.Text = "Moving Staircases"
+movingcase.TextColor3 = Color3.fromRGB(255, 255, 255)
+movingcase.TextSize = 14.000
+movingcase.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-205.960327, 67.1499786, -51.7318268, -0.000451017171, -5.55717783e-08, -0.999999881, 7.59298473e-08, 1, -5.560603e-08, 0.999999881, -7.59549152e-08, -0.000451017171)
+end)
+
+pool.Name = "pool"
+pool.Parent = TeleportPage
+pool.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+pool.BorderColor3 = Color3.fromRGB(29, 29, 29)
+pool.Position = UDim2.new(0.033996582, 0, 0.693820179, 0)
+pool.Size = UDim2.new(0, 456, 0, 30)
+pool.Font = Enum.Font.Ubuntu
+pool.Text = "Pool"
+pool.TextColor3 = Color3.fromRGB(255, 255, 255)
+pool.TextSize = 14.000
+pool.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-87.8282089, 13.1499996, -140.950134, 0.999873936, -9.54003432e-10, 0.0158787146, -4.83806994e-10, 1, 9.05457043e-08, -0.0158787146, -9.05419739e-08, 0.999873936)
+end)
+
+mine.Name = "mine"
+mine.Parent = TeleportPage
+mine.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+mine.BorderColor3 = Color3.fromRGB(29, 29, 29)
+mine.Position = UDim2.new(0.033996582, 0, 0.837078452, 0)
+mine.Size = UDim2.new(0, 222, 0, 30)
+mine.Font = Enum.Font.Ubuntu
+mine.Text = "Mine Field"
+mine.TextColor3 = Color3.fromRGB(255, 255, 255)
+mine.TextSize = 14.000
+mine.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-59.0074692, 3.3499999, 4.7022047, -0.999494255, 0, 0.0318109877, 0, 1, 0, -0.0318109877, 0, -0.999494255)
+end)
+
+balloon.Name = "balloon"
+balloon.Parent = TeleportPage
+balloon.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+balloon.BorderColor3 = Color3.fromRGB(29, 29, 29)
+balloon.Position = UDim2.new(0.509506762, 0, 0.837078452, 0)
+balloon.Size = UDim2.new(0, 222, 0, 30)
+balloon.Font = Enum.Font.Ubuntu
+balloon.Text = "Balloon"
+balloon.TextColor3 = Color3.fromRGB(255, 255, 255)
+balloon.TextSize = 14.000
+balloon.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-112.152611, 3.3499999, 33.0646553, -1, -1.86691569e-08, -6.65356638e-05, -1.86686151e-08, 1, -8.13765233e-09, 6.65356638e-05, -8.13640977e-09, -1)
+end)
+
+TextLabel_8.Parent = TeleportPage
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Position = UDim2.new(0.0122448979, 0, -0.053370785, 0)
+TextLabel_8.Size = UDim2.new(0, 466, 0, 86)
+TextLabel_8.Font = Enum.Font.Ubuntu
+TextLabel_8.Text = "_____________"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextSize = 50.000
+
+CreditPage.Name = "CreditPage"
+CreditPage.Parent = MainFrame
+CreditPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreditPage.BackgroundTransparency = 1.000
+CreditPage.Position = UDim2.new(0.208149597, 0, 0.0918367356, 0)
+CreditPage.Size = UDim2.new(0, 490, 0, 356)
+CreditPage.Image = "rbxassetid://3570695787"
+CreditPage.ImageColor3 = Color3.fromRGB(35, 35, 35)
+CreditPage.ScaleType = Enum.ScaleType.Slice
+CreditPage.SliceCenter = Rect.new(100, 100, 100, 100)
+CreditPage.SliceScale = 0.050
+
+UICredits.Name = "UI Credits"
+UICredits.Parent = CreditPage
+UICredits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UICredits.BackgroundTransparency = 1.000
+UICredits.BorderSizePixel = 0
+UICredits.Position = UDim2.new(0.196598634, 0, 0.0617977977, 0)
+UICredits.Size = UDim2.new(0, 296, 0, 34)
+UICredits.Font = Enum.Font.Ubuntu
+UICredits.Text = "GUI Made by 24dxmon#4869"
+UICredits.TextColor3 = Color3.fromRGB(255, 255, 255)
+UICredits.TextSize = 30.000
+
+UICredits_2.Name = "UI Credits"
+UICredits_2.Parent = CreditPage
+UICredits_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UICredits_2.BackgroundTransparency = 1.000
+UICredits_2.BorderSizePixel = 0
+UICredits_2.Position = UDim2.new(0.196598634, 0, 0.171348378, 0)
+UICredits_2.Size = UDim2.new(0, 296, 0, 34)
+UICredits_2.Font = Enum.Font.Ubuntu
+UICredits_2.Text = "Scripted by 24dxmon#4869"
+UICredits_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+UICredits_2.TextSize = 30.000
+
+-- Scripts:
+
+local function IYJCQQ_fake_script() -- OpenHomePage.PageSwitch 
+	local script = Instance.new('LocalScript', OpenHomePage)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.CreditPage.Visible = false
+		script.Parent.Parent.Parent.FunctionPage.Visible = false
+		script.Parent.Parent.Parent.GuisPage.Visible = true
+		script.Parent.Parent.Parent.TeleportPage.Visible = false
+	end)
+end
+coroutine.wrap(IYJCQQ_fake_script)()
+local function DNWM_fake_script() -- OpenFuctionPage.PageSwitch 
+	local script = Instance.new('LocalScript', OpenFuctionPage)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.CreditPage.Visible = false
+		script.Parent.Parent.Parent.FunctionPage.Visible = true
+		script.Parent.Parent.Parent.GuisPage.Visible = false
+		script.Parent.Parent.Parent.TeleportPage.Visible = false
+	end)
+end
+coroutine.wrap(DNWM_fake_script)()
+local function RGBZ_fake_script() -- OpenTeleportPage.PageSwitch 
+	local script = Instance.new('LocalScript', OpenTeleportPage)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.CreditPage.Visible = false
+		script.Parent.Parent.Parent.FunctionPage.Visible = false
+		script.Parent.Parent.Parent.GuisPage.Visible = false
+		script.Parent.Parent.Parent.TeleportPage.Visible = true
+	end)
+end
+coroutine.wrap(RGBZ_fake_script)()
+local function GQYE_fake_script() -- OpenCreditPage.PageSwitch 
+	local script = Instance.new('LocalScript', OpenCreditPage)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.CreditPage.Visible = true
+		script.Parent.Parent.Parent.FunctionPage.Visible = false
+		script.Parent.Parent.Parent.GuisPage.Visible = false
+		script.Parent.Parent.Parent.TeleportPage.Visible = false
+	end)
+end
+coroutine.wrap(GQYE_fake_script)()
+local function KGPOQGO_fake_script() -- TopBar.Draggable 
+	local script = Instance.new('LocalScript', TopBar)
+
+	local UserInputService = game:GetService("UserInputService") --this script makes the gui draggable
+	
+	local gui = script.Parent.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(KGPOQGO_fake_script)()
+local function TFMBV_fake_script() -- GumballHUB.KeyBind to Open GUI 
+	local script = Instance.new('LocalScript', GumballHUB)
+
+	local FrameObject = script.Parent.MainFrame --Directs to the Mainframe/MainGUI that needs to be made visible
+	local Open = false --Lets the script know if the GUI is visible or not
+	
+	local UserInputService = game:GetService("UserInputService") --Directs to InputService to pickup what key the user presses
+	
+	UserInputService.InputBegan:Connect(function(KeyCode) --Connects function
+		if KeyCode.KeyCode == Enum.KeyCode.RightShift then --(CHANGE "RightShift" TO WHATEVER YOU WANT YOUR KEYBIND TO BE) --Tells the script which key is needed to be clicked 
+			if Open then --If the gui is open then close
+				FrameObject.Visible = false --Makes the gui invisible
+				Open = false --lets the script know the gui is closed
+			else --if the gui is not open then
+				Open = true --Lets the script know the gui is opened
+				FrameObject.Visible = true --makes the gui visible
+			end --ends variable
+		end --ends variable
+	end) --ends script
+end
+coroutine.wrap(TFMBV_fake_script)()
